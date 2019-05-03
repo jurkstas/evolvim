@@ -10,6 +10,12 @@
 #[macro_use]
 extern crate serde_derive;
 extern crate serde;
+extern crate nalgebra;
+extern crate noise;
+extern crate bincode;
+extern crate rand;
+#[cfg(multithreading)]
+extern crate rayon;
 
 pub mod board;
 pub mod brain;
