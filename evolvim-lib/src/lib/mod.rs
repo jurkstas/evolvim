@@ -7,17 +7,18 @@
 
 // #![deny(unsafe_code)]
 
-#[macro_use]
-extern crate serde_derive;
-extern crate serde;
+extern crate bincode;
 extern crate nalgebra;
 extern crate ncollide2d;
-extern crate nphysics2d;
 extern crate noise;
-extern crate bincode;
+extern crate nphysics2d;
 extern crate rand;
 #[cfg(multithreading)]
 extern crate rayon;
+extern crate serde;
+
+#[macro_use]
+extern crate serde_derive;
 
 pub mod board;
 pub mod brain;
@@ -25,9 +26,9 @@ pub mod climate;
 pub mod constants;
 pub mod neat;
 pub mod sbip;
+pub mod serde_structs;
 pub mod softbody;
 pub mod terrain;
-pub mod serde_structs;
 
 pub use self::board::*;
 pub use self::brain::*;
