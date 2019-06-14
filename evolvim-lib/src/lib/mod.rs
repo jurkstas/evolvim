@@ -16,6 +16,7 @@ extern crate rand;
 #[cfg(multithreading)]
 extern crate rayon;
 extern crate serde;
+extern crate specs;
 
 #[macro_use]
 extern crate serde_derive;
@@ -24,11 +25,14 @@ pub mod board;
 pub mod brain;
 pub mod climate;
 pub mod constants;
+pub mod ecs_board;
 pub mod neat;
 pub mod sbip;
 pub mod serde_structs;
 pub mod softbody;
+pub mod systems;
 pub mod terrain;
+pub mod time;
 
 pub use self::board::*;
 pub use self::brain::*;
